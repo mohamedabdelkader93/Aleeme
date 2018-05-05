@@ -11,6 +11,12 @@ You can write your custom css styles in this file...
 
 */
 
+/*font*/
+@font-face {
+    src: url('fonts/sensation/');
+    font-family : "sensation";
+}
+
 /*dropdown buttons */
 .dropdown-row {
     margin-left: 0px ;
@@ -90,6 +96,18 @@ You can write your custom css styles in this file...
     color: #fff ;
     margin-left: 0;
 }
+
+#products-list{
+    height: inherit !important;
+}
+
+#products-list >div{
+    position: relative !important;
+    left: inherit !important;
+    top: inherit !important;
+}
+
+
 /* responsive */
 @media (max-width:425px) {
     .dropdown.products-dropdown {
@@ -342,20 +360,35 @@ a[href="blog-detail-2.html"]:hover {
 
 
 
-
-
-#products-list{
-    height: inherit !important;
-}
-
-#products-list >div{
-    position: relative !important;
-    left: inherit !important;
-    top: inherit !important;
-}
-
-
+/*Logo styling */
 .navbar-brand {
     max-width: 90px;
     margin: 3px 0;
+}
+
+
+/*sign in form */
+.header--topbar-links div.form-group {
+    display: inline-block;
+}
+
+.header--topbar-links div.form-group {
+    padding: 16px 5px;
+    margin: -5px 3px;
+}
+
+.header--topbar-links div.form-group input.form-control {
+    padding: 5px 10px;
+    height: 32px;
+}
+
+.header--topbar-links div.form-group button {
+    margin: 5px;
+    padding: 3px 15px;
+}
+
+@media (max-width:425px) {
+    .header--topbar-links div.form-group {
+        margin: -5px 14px;
+    }
 }
