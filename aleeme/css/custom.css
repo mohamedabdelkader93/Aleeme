@@ -392,18 +392,7 @@ a[href="blog-detail-2.html"]:hover {
     margin:0;
 } 
 
-.register-bg-sec{
-    position: relative;
-}
-.register-bg-sec:before{
-    content: '';
-    position: absolute;
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    background: rgba(134, 134, 134, 0.2);
-}
+
 @media (max-width:425px) {
     ul.header--topbar-links {
         float: none;
@@ -420,4 +409,50 @@ a[href="blog-detail-2.html"]:hover {
         width: 100%;
         padding: 0 5px;
     }
+}
+
+/*register-carousel*/
+.register-carousel .item {
+    min-height: 500px;
+    height: auto;
+    text-align: center;
+}
+.register-carousel .item img {
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
+
+.register-carousel .owl-dot {
+    background-color: rgba(226,226,228,0.7);
+}
+.register-carousel .owl-dot:hover , .register-carousel .owl-dot.active {
+    background-color: grey;
+}
+.register-carousel .owl-dots {
+    position: absolute;
+    top:90%;
+}
+.register-carousel .item .carousel-text {
+    display: inline;
+    position: absolute;
+    top:55%;
+    left:0;
+    bottom: 0;
+    padding: 0 5px;
+    text-align: center;
+}
+.register-carousel .item .carousel-text::before {
+    content: "";
+    background: rgba(226,226,228,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.register-carousel .item .carousel-text h6 , .register-carousel .item .carousel-text h3 {
+    color: #3b3b3b;
 }

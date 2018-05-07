@@ -520,43 +520,62 @@ Author URI  : https://themeforest.net/user/themelooks
                 scrollReveal.reveal($(this).children(), { duration: 800 }, 150);
             });
         }
+    });
 
-        /* ------------------------------------------------------------------------- *
-         * CARDS FILTERING
-         * ------------------------------------------------------------------------- */
-        $('.products-dropdown-menu a').click(function () {
-            var filter = $(this).attr('data-filter');
-            filterList(filter);
-            var text = $(this).html();
-            $('.products-dropdown.open span').text(text);
-        })
+    /* ------------------------------------------------------------------------- *
+     * CARDS FILTERING
+     * ------------------------------------------------------------------------- */
+    $('.products-dropdown-menu a').click(function () {
+        var filter = $(this).attr('data-filter');
+        filterList(filter);
+        var text = $(this).html();
+        $('.products-dropdown.open span').text(text);
+    })
 
-        function filterList(value) {
+    function filterList(value) {
+        var list = $("#products-list div[data-filter-category]");
+        $(list).css("display", "none");
+        $(list).delay(200).fadeOut("fast");
+
+        $("#products-list").find("div[data-filter-category*=" + value + "]").each(function (i) {
+            $(this).css("position", "relative");
+            $(this).delay(200).slideDown("fast");
+        });
+    }
+
+    $(".dropdown.products-dropdown > a").click(function () {
+        var filter = $(this).attr('data-filter');
+        if (filter == "all") {
             var list = $("#products-list div[data-filter-category]");
             $(list).css("display", "none");
             $(list).delay(200).fadeOut("fast");
 
-            $("#products-list").find("div[data-filter-category*=" + value + "]").each(function (i) {
+            $("#products-list").find("div[data-filter-category]").each(function (i) {
                 $(this).css("position", "relative");
                 $(this).delay(200).slideDown("fast");
             });
+        } else {
+            return;
         }
-
-        $(".dropdown.products-dropdown > a").click(function () {
-            var filter = $(this).attr('data-filter');
-            if (filter == "all") {
-                var list = $("#products-list div[data-filter-category]");
-                $(list).css("display", "none");
-                $(list).delay(200).fadeOut("fast");
-
-                $("#products-list").find("div[data-filter-category]").each(function (i) {
-                    $(this).css("position", "relative");
-                    $(this).delay(200).slideDown("fast");
-                });
-            } else {
-                return;
-            }
-        })
     });
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+
 
 })(jQuery);
