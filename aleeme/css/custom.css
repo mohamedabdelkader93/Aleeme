@@ -413,6 +413,7 @@ a[href="blog-detail-2.html"]:hover {
 
 /*register-carousel*/
 .register-carousel .item {
+    position: relative;
     min-height: 500px;
     height: auto;
     text-align: center;
@@ -421,6 +422,16 @@ a[href="blog-detail-2.html"]:hover {
     position: absolute;
     width: 100%;
     height:100%;
+}
+.register-carousel .carousel-img::before {
+    content: "";
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 .register-carousel .owl-dot {
@@ -454,5 +465,5 @@ a[href="blog-detail-2.html"]:hover {
 }
 
 .register-carousel .item .carousel-text h6 , .register-carousel .item .carousel-text h3 {
-    color: #3b3b3b;
+    color: #000;
 }
