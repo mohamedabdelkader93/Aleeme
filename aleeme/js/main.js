@@ -559,6 +559,10 @@ Author URI  : https://themeforest.net/user/themelooks
         }
     });
 
+    /* ------------------------------------------------------------------------- *
+     * register page slider
+     * ------------------------------------------------------------------------- */
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
