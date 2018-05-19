@@ -478,8 +478,10 @@ Author URI  : https://themeforest.net/user/themelooks
 
             setTimeout(function() {
                 $(document).on('click', function(e) {
-                    if ($(e.target).not('.widget--title.selected').length === 1) { $t.removeClass('selected');
-                        $t.removeAttr('contenteditable', 'true'); }
+                    if ($(e.target).not('.widget--title.selected').length === 1) {
+                        $t.removeClass('selected');
+                        $t.removeAttr('contenteditable', 'true');
+                    }
                 });
             }, 200);
         });
@@ -586,6 +588,12 @@ Author URI  : https://themeforest.net/user/themelooks
 
 })(jQuery);
 
+var startTourBtn = document.getElementById("start-tour");
+
+startTourBtn.addEventListener("click", function() {
+    startIntro();
+});
+
 function startIntro() {
     var intro = introJs();
     intro.setOptions({
@@ -593,7 +601,7 @@ function startIntro() {
                 intro: "Hello world!"
             },
             {
-                element: document.querySelector('#step1'),
+                element: document.querySelector('#headerNav'),
                 intro: "This is a tooltip."
             },
             {

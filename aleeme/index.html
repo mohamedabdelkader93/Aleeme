@@ -112,9 +112,9 @@
                                 <i class="fa mr--8 fa-user-o"></i>
                                 <span>My Account</span>
                             </a>
-                            <a href="#" class="btn-link">
-                                <span onclick="startIntro();">Start tour</span>
-                            </a>
+                            <button type="button" class="btn-link" id="start-tour">
+                                <span>Start tour</span>
+                            </button>
                         </li>
                     </ul>
                     <!-- Header Topbar Links End -->
@@ -143,7 +143,7 @@
                         <!-- Header Navbar Logo End -->
                     </div>
 
-                    <div id="headerNav step1" class="navbar-collapse collapse float--right">
+                    <div id="headerNav" class="navbar-collapse collapse float--right">
                         <!-- Header Nav Links Start -->
                         <ul class="header--nav-links style--1 nav ff--primary">
                             <li class="dropdown">
@@ -1004,7 +1004,7 @@
 
     <!-- ==== Plugins Bundle ==== -->
     <script src="js/plugins.min.js"></script>
-    <script src="js/intro.min.js"></script>
+    <script src="js/intro.js"></script>
 
     <!-- ==== Main Script ==== -->
     <script src="js/main.js"></script>
