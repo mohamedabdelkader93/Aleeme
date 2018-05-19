@@ -22,6 +22,7 @@
 
     <!-- ==== Plugins Bundle ==== -->
     <link rel="stylesheet" href="css/plugins.min.css">
+    <link rel="stylesheet" href="css/introjs.min.css">
 
     <!-- ==== Main Stylesheet ==== -->
     <link rel="stylesheet" href="style.css">
@@ -111,6 +112,9 @@
                                 <i class="fa mr--8 fa-user-o"></i>
                                 <span>My Account</span>
                             </a>
+                            <a href="#" class="btn-link">
+                                <span onclick="startIntro();">Start tour</span>
+                            </a>
                         </li>
                     </ul>
                     <!-- Header Topbar Links End -->
@@ -119,7 +123,7 @@
             <!-- Header Topbar End -->
 
             <!-- Header Navbar Start -->
-            <div class="header--navbar navbar bg-black" data-trigger="sticky">
+            <div class="header--navbar navbar bg-blue" data-trigger="sticky">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle style--1 collapsed" data-toggle="collapse" data-target="#headerNav">
@@ -139,7 +143,7 @@
                         <!-- Header Navbar Logo End -->
                     </div>
 
-                    <div id="headerNav" class="navbar-collapse collapse float--right">
+                    <div id="headerNav step1" class="navbar-collapse collapse float--right">
                         <!-- Header Nav Links Start -->
                         <ul class="header--nav-links style--1 nav ff--primary">
                             <li class="dropdown">
@@ -211,62 +215,10 @@
         </header>
         <!-- Header Section End -->
 
-        <!-- Banner Section Start -->
-        <section class="banner--section" data-bg-img="img/preview-img/banner-bg.jpg" data-overlay="0.7">
-            <div class="container">
-                <!-- Banner Content Start -->
-                <div class="banner--content pt--100 pb--100 text-center">
-                    <div class="title pb--10">
-                        <h1 class="h4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                    </div>
-
-                    <div class="sub-title pb--10">
-                        <h2 class="h2 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
-                    </div>
-
-                    <div class="action eq text-uppercase">
-                        <a href="#" class="btn btn-white">About Us</a>
-                    </div>
-                </div>
-                <!-- Banner Content End -->
-            </div>
-        </section>
-        <!-- Banner Section End -->
-
-        <!-- about us section -->
-        <div class="section bg-lighter pt--80 pb--40">
-            <div class="container">
-                <div class="row row--md-vc">
-                    <div class="col-md-6 pb--40">
-                        <img src="img/about-img/01.jpg" alt="">
-                    </div>
-
-                    <div class="col-md-6 pb--40">
-                        <!-- Text Block Start -->
-                        <div class="text--block">
-                            <div class="content fs--14">
-                                <h3>About Us</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eius, nesciunt animi qui quaerat aliquam corrupti beatae, veniam excepturi maxime quas rerum asperiores dolore aliquid atque? Aperiam neque ex fugiat?</p>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eius, nesciunt animi qui quaerat aliquam corrupti beatae, veniam excepturi maxime quas rerum asperiores dolore aliquid atque? Aperiam neque ex fugiat?</p>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dicta fugiat voluptatibus aperiam officia quis asperiores animi error distinctio corporis, doloribus aliquam libero maiores modi dolores perspiciatis beatae
-                                    nulla, eaque?</p>
-                            </div>
-                        </div>
-                        <!-- Text Block End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- about us section End-->
-
         <!-- products Section Start -->
         <div class="main--content col-md-12 pb--40">
             <div class="main--content-inner">
-                <div class="row dropdown-row">
-                    <h3>Items Filter</h3>
+                <div class="row dropdown-row" id="step2">
                     <div class="dropdown products-dropdown">
                         <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon">
@@ -362,510 +314,485 @@
                         <a data-filter="all">Show All</a>
                     </div>
                 </div>
-                <div class="row AdjustRow " id="products-list">
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat1">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-01-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-01-hover.jpg " alt=" ">
+                <hr />
+                <div class="container">
+                    <!-- Banner Section Start -->
+                    <section class="banner--section" data-bg-img="img/preview-img/banner-bg.jpg" data-overlay="0.7" id="step3">
+                        <div class="container">
+                            <!-- Banner Content Start -->
+                            <div class="banner--content pt--100 pb--100 text-center">
+                                <div class="title pb--10">
+                                    <h1 class="h4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                                </div>
 
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
+                                <div class="sub-title pb--10">
+                                    <h2 class="h2 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+                                </div>
+
+                                <div class="action eq text-uppercase">
+                                    <a href="#" class="btn btn-white">About Us</a>
                                 </div>
                             </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Wireless Gaming Controller</a>
-                                    </h3>
-                                </div>
-
-                                <div class="action fs--14 ">
-                                    <a href="cart.html ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
+                            <!-- Banner Content End -->
                         </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat2">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-02-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-02-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">WiFi Action Camera</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat3">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Offer Start -->
-                            <div class="product--offer text-white bg-primary ">
-                                <p>Flat 25% Off</p>
-                            </div>
-                            <!-- Product Offer End -->
-
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-03-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-03-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Portable Bluetooth Speaker</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat4">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-04-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-04-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Indoor Security Camera</a>
-                                    </h3>
-                                </div>
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat1">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-05-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-05-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Professional Aerial Drone</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat2">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-06-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-06-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Pen &amp; Touch Tablet</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat3">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-07-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-07-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Trendy Leather Bag</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat4">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-08-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-08-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Electric Guiter Amplifier</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat1">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-09-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-09-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Hover Camera Passport Drone</a>
-                                    </h3>
-                                </div>
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat2">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-10-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-10-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Stripped-Back Handset</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 " data-filter-category="cat1">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-11-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-11-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Wireless Portable Speaker</a>
-                                    </h3>
-                                </div>
-
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
-
-                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat4">
-                        <!-- Product Item Start -->
-                        <div class="product--item " data-scroll-reveal="bottom ">
-                            <!-- Product Offer Start -->
-                            <div class="product--offer text-white bg-primary ">
-                                <p>Flat 25% Off</p>
-                            </div>
-                            <!-- Product Offer End -->
-
-                            <!-- Product Image Start -->
-                            <div class="product--img ">
-                                <img src="img/products-img/img-12-normal.jpg " alt=" ">
-                                <img src="img/products-img/img-12-hover.jpg " alt=" ">
-
-                                <div class="action ">
-                                    <a href="product-details.html ">
-                                        <i class="fa fa-eye "></i>
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Product Image End -->
-
-                            <!-- Product Info Start -->
-                            <div class="product--info text-center ">
-                                <div class="cat ">
-                                    <p>
-                                        <a href="# " class="btn-link ">Uncatagory</a>
-                                    </p>
-                                </div>
-
-                                <div class="title ">
-                                    <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Digital Rangefinder Camera</a>
-                                    </h3>
-                                </div>
-
-                                <div class="action fs--14 ">
-                                    <a href="# ">View Details</a>
-                                </div>
-                            </div>
-                            <!-- Product Info End -->
-                        </div>
-                        <!-- Product Item End -->
-                    </div>
+                    </section>
+                    <!-- Banner Section End -->
                 </div>
+                <hr />
+                <div class="row AdjustRow " id="products-list">
+                    <div class="col-xs-12">
+                        <h3 class="section--title">Trending</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat1" id="step4">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kWmX3pd1f10" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
 
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">What is Artificial Intelligence Exactly?</a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat2">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mXjCXGJDP8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV Interview
+                                            </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat3">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JvbHu_bVa_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">Google's AI Assistant Can Now Make Real Phone Calls
+                                            </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat4">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">A.I. is Progressing Faster Than You Think!
+                                            </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+
+                </div>
+                <hr />
+                <div class="row AdjustRow " id="products-list">
+                    <div class="col-xs-12">
+                        <h3 class="section--title">My list</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat1">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kWmX3pd1f10" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">What is Artificial Intelligence Exactly?</a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat2">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mXjCXGJDP8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV Interview
+                                                </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat3">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JvbHu_bVa_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">Google's AI Assistant Can Now Make Real Phone Calls
+                                                </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat4">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">A.I. is Progressing Faster Than You Think!
+                                                </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+
+                </div>
+                <hr />
+                <div class="row AdjustRow " id="products-list">
+                    <div class="col-xs-12">
+                        <h3 class="section--title">My channel</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat1">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kWmX3pd1f10" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">What is Artificial Intelligence Exactly?</a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat2">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mXjCXGJDP8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV Interview
+                                                </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat3">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JvbHu_bVa_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">Google's AI Assistant Can Now Make Real Phone Calls
+                                                </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-xxs-12 pb--30 " data-filter-category="cat4">
+                        <!-- Product Item Start -->
+                        <div class="product--item videos-listing-card" data-scroll-reveal="bottom ">
+                            <!-- Product Image Start -->
+                            <div class="product--img ">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mQO2PcEW9BY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <span class="time">1:32</span>
+                                <div class="action ">
+                                    <a href="product-details.html ">
+                                        <i class="fa fa-eye "></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Product Image End -->
+
+                            <!-- Product Info Start -->
+                            <div class="product--info text-left ">
+                                <div class="title ">
+                                    <h3 class="h6 ">
+                                        <a href="product-details.html " class="btn-link ">A.I. is Progressing Faster Than You Think!
+                                                </a>
+                                    </h3>
+                                </div>
+                                <div class="cat text-left">
+                                    <p>
+                                        <a href="#" class="channel">ColdFusion</a>.
+                                        <span class="views">289M views</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Product Info End -->
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+
+                </div>
                 <!-- Page Count Start -->
-                <div class="page--count pb--30 ">
+                <div class="page--count pb--30 " id="step5">
                     <label class="ff--primary fs--14 fw--500 text-darker ">
                         <span>Viewing</span>
 
@@ -1077,6 +1004,7 @@
 
     <!-- ==== Plugins Bundle ==== -->
     <script src="js/plugins.min.js"></script>
+    <script src="js/intro.min.js"></script>
 
     <!-- ==== Main Script ==== -->
     <script src="js/main.js"></script>

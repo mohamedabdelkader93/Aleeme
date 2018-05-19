@@ -11,6 +11,10 @@ You can write your custom css styles in this file...
 
 */
 
+.bg-blue {
+    background-color: #002060;
+}
+
 .main--content {
     float: none;
 }
@@ -30,7 +34,7 @@ You can write your custom css styles in this file...
 .dropdown.products-dropdown {
     display: inline-block;
     margin-right: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     position: relative;
 }
 
@@ -489,4 +493,45 @@ a[href="blog-detail-2.html"]:hover {
 .register-carousel .item .carousel-text h6,
 .register-carousel .item .carousel-text h3 {
     color: #000;
+}
+
+
+/* header */
+
+.header--navbar {
+    color: #fff;
+}
+
+.header--nav-links>li>a {
+    font-size: 16px;
+}
+
+.dropdown-menu>li>a {
+    color: #002060;
+}
+
+
+/* videos-listing-card */
+
+.videos-listing-card .product--info {
+    background-color: #FAFAFA;
+}
+
+.videos-listing-card .product--img .time {
+    position: absolute;
+    right: 8px;
+    bottom: 20px;
+    background-color: rgba(25, 53, 37, 0.7);
+    color: #fff;
+    padding: 3px 7px;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.videos-listing-card iframe {
+    height: 220px;
+}
+
+.section--title {
+    color: #122F6B;
 }

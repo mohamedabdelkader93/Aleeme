@@ -9,7 +9,7 @@ Author URI  : https://themeforest.net/user/themelooks
 
 */
 
-(function ($) {
+(function($) {
     "use strict";
 
     /* ------------------------------------------------------------------------- *
@@ -22,17 +22,17 @@ Author URI  : https://themeforest.net/user/themelooks
     /* ------------------------------------------------------------------------- *
      * CHECK DATA
      * ------------------------------------------------------------------------- */
-    var checkData = function (data, value) {
+    var checkData = function(data, value) {
         return typeof data === 'undefined' ? value : data;
     };
 
-    $(function () {
+    $(function() {
         /* ------------------------------------------------------------------------- *
          * BACKGROUND IMAGE
          * ------------------------------------------------------------------------- */
         var $bgImg = $('[data-bg-img]');
 
-        $bgImg.css('background-image', function () {
+        $bgImg.css('background-image', function() {
             return 'url("' + $(this).data('bg-img') + '")';
         }).addClass('bg--img').removeAttr('data-bg-img').attr('data-rjs', 2);
 
@@ -50,7 +50,7 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $sticky = $('[data-trigger="sticky"]');
 
-        $sticky.each(function () {
+        $sticky.each(function() {
             $sticky.sticky({
                 zIndex: 999
             });
@@ -82,11 +82,11 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $formValidation = $('[data-form="validate"] form');
 
-        $formValidation.each(function () {
+        $formValidation.each(function() {
             var $t = $(this);
 
             $t.validate({
-                errorPlacement: function () {
+                errorPlacement: function() {
                     return true;
                 }
             });
@@ -97,20 +97,20 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $ajaxForm = $('[data-form="ajax"] form');
 
-        $ajaxForm.each(function () {
+        $ajaxForm.each(function() {
             var $form = $(this),
                 $formStatus = $form.find('.status');
 
             $form.validate({
-                errorPlacement: function () {
+                errorPlacement: function() {
                     return true;
                 },
-                submitHandler: function (el) {
+                submitHandler: function(el) {
                     var $form = $(el),
                         formUrl = $form.attr('action'),
                         formData = $form.serialize();
 
-                    $.post(formUrl, formData, function (res) {
+                    $.post(formUrl, formData, function(res) {
                         $formStatus.show().html(res).delay(6000).fadeOut('show');
                     });
                 }
@@ -165,10 +165,10 @@ Author URI  : https://themeforest.net/user/themelooks
          * -------------------------------------------------------------------------*/
         var $countDown = $('[data-countdown]');
 
-        $countDown.each(function () {
+        $countDown.each(function() {
             var $t = $(this);
 
-            $t.countdown($t.data('countdown'), function (e) {
+            $t.countdown($t.data('countdown'), function(e) {
                 $(this).html('<ul>' + e.strftime('<li><strong>%D</strong><span>DAYS</span></li><li><strong>%H</strong><span>HOURS</span></li><li><strong>%M</strong><span>MINUTES</span></li><li><strong>%S</strong><span>SECONDS</span></li>') + '</ul>');
             });
         });
@@ -178,7 +178,7 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $smoothScroll = $('[data-trigger="smoothScroll"]');
 
-        $smoothScroll.on('click', function (e) {
+        $smoothScroll.on('click', function(e) {
             e.preventDefault();
 
             e.$el = $(this);
@@ -194,7 +194,7 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $owlCarousel = $('.owl-carousel');
 
-        $owlCarousel.each(function () {
+        $owlCarousel.each(function() {
             var $t = $(this);
 
             $t.owlCarousel({
@@ -218,7 +218,7 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $panelOpen = $('[data-keep-panel="open"]');
 
-        $panelOpen.on('click', '[data-toggle="collapse"]', function (e) {
+        $panelOpen.on('click', '[data-toggle="collapse"]', function(e) {
             if (!$(this).hasClass('collapsed')) {
                 e.stopPropagation();
             }
@@ -230,7 +230,7 @@ Author URI  : https://themeforest.net/user/themelooks
         var $boxControls = $('.box--controls');
 
         if ($boxControls.length) {
-            $boxControls.on('click', '[data-action]', function (e) {
+            $boxControls.on('click', '[data-action]', function(e) {
                 e.preventDefault();
                 e.$el = $(this);
                 e.$siblingOwl = e.$el.parent().siblings('.owl-carousel');
@@ -244,7 +244,7 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $mediaVideoModal = $('.media--modal.type--video');
 
-        $mediaVideoModal.on('hidden.bs.modal', function () {
+        $mediaVideoModal.on('hidden.bs.modal', function() {
             var $t = $(this),
                 $iframe = $t.find('.media--video iframe'),
                 value = $t.find('iframe').attr('src');
@@ -258,9 +258,9 @@ Author URI  : https://themeforest.net/user/themelooks
         var $faqItem2 = $('.faq--item.style--2');
 
         $faqItem2
-            .on('show.bs.collapse', '.content', function () {
+            .on('show.bs.collapse', '.content', function() {
                 $(this).parents('.faq--item').addClass('opened');
-            }).on('hide.bs.collapse', '.content', function () {
+            }).on('hide.bs.collapse', '.content', function() {
                 $(this).parents('.faq--item').removeClass('opened');
             });
 
@@ -275,11 +275,12 @@ Author URI  : https://themeforest.net/user/themelooks
             $mapOps = $map.data('map-options');
 
             // Map Initialization
-            window.initMap = function () {
+            window.initMap = function() {
                 $map.css('min-height', '400px');
 
-                $map.each(function () {
-                    var $t = $(this), map, lat, lng, zoom;
+                $map.each(function() {
+                    var $t = $(this),
+                        map, lat, lng, zoom;
 
                     $mapOps = $t.data('map-options');
                     lat = parseFloat($mapOps.latitude, 10);
@@ -320,7 +321,7 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $reviewRating = $('.review--rating');
 
-        $reviewRating.on('click', 'label', function () {
+        $reviewRating.on('click', 'label', function() {
             var $t = $(this);
 
             $t.parent('.stars').attr('data-selected', $t.children('input').val());
@@ -331,13 +332,13 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $cartWidget = $('.cart--widget');
 
-        $cartWidget.on('click', '.remove', function (e) {
+        $cartWidget.on('click', '.remove', function(e) {
             e.preventDefault();
 
             e.$el = $(this);
             e.$parent = e.$el.parent('li');
 
-            e.$el.fadeOut(function () {
+            e.$el.fadeOut(function() {
                 if (e.$parent.index() === 0 && e.$parent.next().length === 0) {
                     e.$parent.html('<p>No products in the cart.</p>');
                 } else {
@@ -353,7 +354,7 @@ Author URI  : https://themeforest.net/user/themelooks
             $headerNavbar = $('.header--navbar'),
             $headerSearch2 = $('.header--search.style--2');
 
-        $headerSearch2.on('click', 'button', function (e) {
+        $headerSearch2.on('click', 'button', function(e) {
             var $parent = $(this).parents('.header--search');
 
             if (!$parent.hasClass('open')) {
@@ -361,8 +362,8 @@ Author URI  : https://themeforest.net/user/themelooks
                 $parent.addClass('open');
             }
 
-            setTimeout(function () {
-                $document.on('click.hs', function (e) {
+            setTimeout(function() {
+                $document.on('click.hs', function(e) {
                     e.$target = $(e.target);
 
                     if (e.$target.not('.header--search').length === 0 || e.$target.parents('.header--search').length === 0) {
@@ -377,8 +378,8 @@ Author URI  : https://themeforest.net/user/themelooks
          * BANNER SECTION
          * ------------------------------------------------------------------------- */
         var $bannerSlider = $('.banner--slider'),
-            bannerSliderFull = function (onresize) {
-                $bannerSlider.css('height', function (wn, bs) {
+            bannerSliderFull = function(onresize) {
+                $bannerSlider.css('height', function(wn, bs) {
                     wn = $wn.outerHeight() - $header.outerHeight(); // Window Height without Header
                     bs = parseInt(bs, 10); // Banner Slider Height
 
@@ -397,7 +398,7 @@ Author URI  : https://themeforest.net/user/themelooks
         var $cs = $('.coming-soon--section');
 
         if ($cs.length) {
-            $cs.css('min-height', function () {
+            $cs.css('min-height', function() {
                 return $cs.find('.cs--content').outerHeight();
             });
         }
@@ -408,7 +409,7 @@ Author URI  : https://themeforest.net/user/themelooks
         var $f0f = $('.f0f--section');
 
         if ($f0f.length) {
-            $f0f.css('min-height', function () {
+            $f0f.css('min-height', function() {
                 return $f0f.find('.f0f--content').outerHeight();
             });
         }
@@ -418,7 +419,7 @@ Author URI  : https://themeforest.net/user/themelooks
          * ------------------------------------------------------------------------- */
         var $backToTop = $('#backToTop');
 
-        $backToTop.on('click', 'a', function (e) {
+        $backToTop.on('click', 'a', function(e) {
             e.preventDefault();
 
             $('html, body').animate({
@@ -427,11 +428,11 @@ Author URI  : https://themeforest.net/user/themelooks
         });
     });
 
-    $wn.on('load', function () {
+    $wn.on('load', function() {
         /* ------------------------------------------------------------------------- *
          * BODY SCROLLING
          * ------------------------------------------------------------------------- */
-        var isBodyScrolling = function () {
+        var isBodyScrolling = function() {
             if ($wn.scrollTop() > 1) {
                 $body.addClass('isScrolling');
             } else {
@@ -469,15 +470,16 @@ Author URI  : https://themeforest.net/user/themelooks
 
         var $el = $('.buddy-finder--widget').siblings('.widget--title');
 
-        $el.on('click', function () {
+        $el.on('click', function() {
             var $t = $(this);
 
             if ($t.hasClass('selected')) $t.attr('contenteditable', 'true').focus();
             if (!$t.hasClass('selected')) $t.addClass('selected');
 
-            setTimeout(function () {
-                $(document).on('click', function (e) {
-                    if ($(e.target).not('.widget--title.selected').length === 1) { $t.removeClass('selected'); $t.removeAttr('contenteditable', 'true'); }
+            setTimeout(function() {
+                $(document).on('click', function(e) {
+                    if ($(e.target).not('.widget--title.selected').length === 1) { $t.removeClass('selected');
+                        $t.removeAttr('contenteditable', 'true'); }
                 });
             }, 200);
         });
@@ -516,7 +518,7 @@ Author URI  : https://themeforest.net/user/themelooks
                 .reveal('[data-scroll-reveal="right"]', { origin: 'right', mobile: false, duration: 800 })
                 .reveal('[data-scroll-reveal="bottom"]', { duration: 800 });
 
-            $scrollRevealGroup.each(function () {
+            $scrollRevealGroup.each(function() {
                 scrollReveal.reveal($(this).children(), { duration: 800 }, 150);
             });
         }
@@ -525,7 +527,7 @@ Author URI  : https://themeforest.net/user/themelooks
     /* ------------------------------------------------------------------------- *
      * CARDS FILTERING
      * ------------------------------------------------------------------------- */
-    $('.products-dropdown-menu a').click(function () {
+    $('.products-dropdown-menu a').click(function() {
         var filter = $(this).attr('data-filter');
         filterList(filter);
         var text = $(this).html();
@@ -537,20 +539,20 @@ Author URI  : https://themeforest.net/user/themelooks
         $(list).css("display", "none");
         $(list).delay(200).fadeOut("fast");
 
-        $("#products-list").find("div[data-filter-category*=" + value + "]").each(function (i) {
+        $("#products-list").find("div[data-filter-category*=" + value + "]").each(function(i) {
             $(this).css("position", "relative");
             $(this).delay(200).slideDown("fast");
         });
     }
 
-    $(".dropdown.products-dropdown > a").click(function () {
+    $(".dropdown.products-dropdown > a").click(function() {
         var filter = $(this).attr('data-filter');
         if (filter == "all") {
             var list = $("#products-list div[data-filter-category]");
             $(list).css("display", "none");
             $(list).delay(200).fadeOut("fast");
 
-            $("#products-list").find("div[data-filter-category]").each(function (i) {
+            $("#products-list").find("div[data-filter-category]").each(function(i) {
                 $(this).css("position", "relative");
                 $(this).delay(200).slideDown("fast");
             });
@@ -579,3 +581,37 @@ Author URI  : https://themeforest.net/user/themelooks
 
 
 })(jQuery);
+
+function startIntro() {
+    var intro = introJs();
+    intro.setOptions({
+        steps: [{
+                intro: "Hello world!"
+            },
+            {
+                element: document.querySelector('#step1'),
+                intro: "This is a tooltip."
+            },
+            {
+                element: document.querySelectorAll('#step2')[0],
+                intro: "Ok, wasn't that fun?",
+                position: 'right'
+            },
+            {
+                element: '#step3',
+                intro: 'More features, more fun.',
+                position: 'left'
+            },
+            {
+                element: '#step4',
+                intro: "Another step.",
+                position: 'bottom'
+            },
+            {
+                element: '#step5',
+                intro: 'Get it, use it.'
+            }
+        ]
+    });
+    intro.start();
+}
