@@ -408,7 +408,26 @@ a[href="blog-detail-2.html"]:hover {
 }
 
 
-/*log in form */
+/*register page styles*/
+
+div.register-topbar {
+    background-color: #012060;
+}
+
+div.register-topbar form {
+    background-color: #000;
+    margin: 10px 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+div.register-bg-sec {
+    padding: 86px 0 0 45px;
+}
+
+div.register-bg-sec img {
+    max-height: 250px;
+}
 
 .register-form {
     padding-top: 40px;
@@ -419,22 +438,59 @@ a[href="blog-detail-2.html"]:hover {
 }
 
 .header--topbar-links div.form-group {
-    padding: 5px 5px;
-    margin: 8px 3px;
+    padding: 0px 2px;
+    margin: 5px 3px;
 }
 
 .header--topbar-links div.form-group input.form-control {
-    padding: 5px 10px;
+    padding: 5px 17px;
     height: 32px;
 }
 
 .header--topbar-links div.form-group button {
+    display: inline-block;
     margin: 5px;
     padding: 3px 15px;
 }
 
+.register-form ul {
+    display: inline-block;
+    padding-top: 20px;
+    vertical-align: bottom;
+}
+
+.register-form li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.register-form li i.fa-linkedin-square {
+    font-size: 34px;
+    color: #25acdc;
+}
+
+.register-form li i.fa-facebook-square {
+    font-size: 34px;
+    color: #3c599f;
+}
+
+.register-form li i.fa-twitter-square {
+    font-size: 34px;
+    color: #25acdc;
+}
+
+.register-form li i.fa-youtube-square {
+    font-size: 34px;
+    color: red;
+}
+
 .contact--form {
     margin: 0;
+    padding: 30px 30px 0 30px;
+}
+
+.contact--subtitle h2 {
+    font-size: 16px;
 }
 
 @media (max-width:425px) {
@@ -454,7 +510,7 @@ a[href="blog-detail-2.html"]:hover {
 }
 
 
-/*register-carousel*/
+/*register-slider*/
 
 .register-carousel .item {
     position: relative;
@@ -534,4 +590,36 @@ a[href="blog-detail-2.html"]:hover {
 
 .section--title {
     color: #122F6B;
+}
+
+
+/*navigation links*/
+
+.navigation-links {
+    background-color: #fff;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.navigation-links ul li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.navigation-links ul li a {
+    cursor: pointer;
+    color: #1d81cc;
+}
+
+.navigation-links ul li a:hover {
+    color: blue;
+}
+
+@media (max-width:425px) {
+    .navigation-links ul li {
+        display: block;
+        padding-top: 5px;
+    }
 }
