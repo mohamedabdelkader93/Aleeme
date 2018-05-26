@@ -403,8 +403,8 @@ a[href="blog-detail-2.html"]:hover {
 /*Logo styling */
 
 .navbar-brand {
-    max-width: 90px;
-    margin: 7px 0;
+    max-width: 119px;
+    margin: 26px 0;
 }
 
 
@@ -431,6 +431,15 @@ div.register-bg-sec img {
 
 .register-form {
     padding-top: 40px;
+}
+
+.header--topbar {
+    border-bottom: 1px solid #575757;
+}
+
+.header--topbar-links li .btn-primary {
+    padding: 6px 12px;
+    margin-top: 21px;
 }
 
 .header--topbar-links div.form-group {
@@ -566,6 +575,22 @@ div.register-bg-sec img {
     color: #002060;
 }
 
+.header--topbar-social>li>a {
+    line-height: 44px;
+}
+
+.header--topbar-links>li>a {
+    padding: 10px 20px;
+}
+
+.ug-default-button-hidepanel .ug-default-button-hidepanel-tip:before {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    color: #fff;
+    margin: 0px -4px;
+}
+
 
 /* videos-listing-card */
 
@@ -623,3 +648,53 @@ div.register-bg-sec img {
         padding-top: 5px;
     }
 }
+
+
+/* video slides */
+
+.ug-strip-panel {
+    height: 120px !important;
+    background-color: #000 !important;
+}
+
+.ug-thumbs-strip {
+    height: 100px !important;
+}
+
+.ug-thumbs-strip .ug-thumbs-strip-inner {
+    height: 100px !important;
+}
+
+.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper {
+    height: 100px !important;
+    width: 130px !important;
+}
+
+.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper img,
+.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper .ug-thumb-border-overlay,
+.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper .ug-thumb-overlay {
+    height: 100px !important;
+    width: 130px !important;
+    border-color: rgb(47, 47, 47) !important;
+}
+
+.ug-theme-default .ug-default-button-play.ug-stop-mode {
+    background-position: 0px -105px;
+}
+
+.ug-theme-default .ug-default-button-play.ug-stop-mode.ug-button-hover {
+    background-position: 0px -105px;
+}
+
+
+/* video-galery-section */
+
+.videos-gallery-sec {
+    height: calc(100vh - 133px);
+}
+
+.videos-gallery-sec .ug-gallery-wrapper {
+    height: calc(100vh - 134px) !important;
+}
+
+.header--navbar-logo {}

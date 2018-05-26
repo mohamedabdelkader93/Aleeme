@@ -33,6 +33,9 @@
     <!-- ==== Color Scheme Stylesheet ==== -->
     <link rel="stylesheet" href="css/colors/color-1.css" id="changeColorScheme">
 
+    <link rel="stylesheet" href="css/custom-lib/unite-gallery.css">
+    <link rel="stylesheet" href="css/custom-lib/ug-theme-default.css">
+
     <!-- ==== Custom Stylesheet ==== -->
     <link rel="stylesheet" href="css/custom.css">
 
@@ -46,9 +49,9 @@
 <body>
 
     <!-- Preloader Start -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="preloader--inner"></div>
-    </div>
+    </div> -->
     <!-- Preloader End -->
 
     <!-- Wrapper Start -->
@@ -56,7 +59,7 @@
         <!-- Header Section Start -->
         <header class="header--section style--1">
             <!-- Header Topbar Start -->
-            <div class="header--topbar bg-black">
+            <div class="header--topbar bg-blue">
                 <div class="container">
                     <!-- Header Topbar Links Start -->
                     <ul class="header--topbar-links nav ff--primary float--left">
@@ -136,8 +139,8 @@
                         <!-- Header Navbar Logo Start -->
                         <div class="header--navbar-logo navbar-brand">
                             <a href="index.html">
-                                <img src="img/Aleeme.png" class="normal" alt="">
-                                <img src="img/Aleeme.png" class="sticky" alt="">
+                                <img src="img/aleeme-logo.png" class="normal" alt="">
+                                <img src="img/aleeme-logo.png" class="sticky" alt="">
                             </a>
                         </div>
                         <!-- Header Navbar Logo End -->
@@ -214,6 +217,16 @@
             <!-- Header Navbar End -->
         </header>
         <!-- Header Section End -->
+        <div class="videos-gallery-sec">
+            <!-- Banner Section Start -->
+            <div id="gallery" style="display:none;">
+                <img alt="Youtube Video" data-type="youtube" data-videoid="kWmX3pd1f10" data-description="You can include youtube videos easily!">
+                <img alt="Youtube Video" data-type="youtube" data-videoid="JvbHu_bVa_g" data-description="You can include youtube videos easily!">
+            </div>
+            <!-- Banner Section End -->
+        </div>
+
+        <hr>
 
         <!-- products Section Start -->
         <div class="main--content col-md-12 pb--40">
@@ -313,30 +326,6 @@
                     <div class="dropdown products-dropdown">
                         <a data-filter="all">Show All</a>
                     </div>
-                </div>
-                <hr />
-                <div class="container">
-                    <!-- Banner Section Start -->
-                    <section class="banner--section" data-bg-img="img/preview-img/banner-bg.jpg" data-overlay="0.7" id="step3">
-                        <div class="container">
-                            <!-- Banner Content Start -->
-                            <div class="banner--content pt--100 pb--100 text-center">
-                                <div class="title pb--10">
-                                    <h1 class="h4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                                </div>
-
-                                <div class="sub-title pb--10">
-                                    <h2 class="h2 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
-                                </div>
-
-                                <div class="action eq text-uppercase">
-                                    <a href="#" class="btn btn-white">About Us</a>
-                                </div>
-                            </div>
-                            <!-- Banner Content End -->
-                        </div>
-                    </section>
-                    <!-- Banner Section End -->
                 </div>
                 <hr />
                 <div class="row AdjustRow " id="products-list">
@@ -1005,6 +994,8 @@
     <!-- ==== Plugins Bundle ==== -->
     <script src="js/plugins.min.js"></script>
     <script src="js/intro.js"></script>
+    <script src="js/custom-lib/ug-theme-default.js"></script>
+    <script src="js/custom-lib/unitegallery.min.js"></script>
 
     <!-- ==== Main Script ==== -->
     <script src="js/main.js"></script>
