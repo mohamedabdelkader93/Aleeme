@@ -17,6 +17,7 @@ You can write your custom css styles in this file...
 
 .main--content {
     float: none;
+    min-height: inherit !important;
 }
 
 
@@ -468,6 +469,12 @@ div.register-bg-sec img {
     vertical-align: bottom;
 }
 
+.social-links-ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
 .register-form li {
     display: inline-block;
     padding-right: 20px;
@@ -615,6 +622,7 @@ div.register-bg-sec img {
 
 .section--title {
     color: #122F6B;
+    margin: 0px 0px 10px 0px;
 }
 
 
@@ -649,52 +657,29 @@ div.register-bg-sec img {
     }
 }
 
-
-/* video slides */
-
-.ug-strip-panel {
-    height: 120px !important;
-    background-color: #000 !important;
-}
-
-.ug-thumbs-strip {
-    height: 100px !important;
-}
-
-.ug-thumbs-strip .ug-thumbs-strip-inner {
-    height: 100px !important;
-}
-
-.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper {
-    height: 100px !important;
-    width: 130px !important;
-}
-
-.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper img,
-.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper .ug-thumb-border-overlay,
-.ug-thumbs-strip .ug-thumbs-strip-inner .ug-thumb-wrapper .ug-thumb-overlay {
-    height: 100px !important;
-    width: 130px !important;
-    border-color: rgb(47, 47, 47) !important;
-}
-
-.ug-theme-default .ug-default-button-play.ug-stop-mode {
-    background-position: 0px -105px;
-}
-
-.ug-theme-default .ug-default-button-play.ug-stop-mode.ug-button-hover {
-    background-position: 0px -105px;
+.is-sticky .header--nav-links.style--1>li:hover>a,
+.is-sticky .header--nav-links.style--1>li>a:hover,
+.is-sticky .header--nav-links.style--1>li.open>a,
+.is-sticky .header--nav-links.style--1>li.open>a:hover,
+.is-sticky .header--nav-links.style--1>li.open>a:focus,
+.is-sticky .header--nav-links.style--1>li.active>a:hover,
+.is-sticky .header--nav-links.style--1>li.active>a,
+.is-sticky .header--nav-links.style--1>li.active>a:focus {
+    color: #fff;
 }
 
 
 /* video-galery-section */
 
-.videos-gallery-sec {
-    height: calc(100vh - 133px);
-}
+.videos-gallery-sec {}
 
-.videos-gallery-sec .ug-gallery-wrapper {
-    height: calc(100vh - 134px) !important;
+.videos-gallery-sec .rvs-container {
+    max-width: inherit;
+    height: calc(100vh - 126px) !important;
 }
 
 .header--navbar-logo {}
+
+.link--video img {
+    width: 100%;
+}

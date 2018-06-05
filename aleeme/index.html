@@ -33,12 +33,11 @@
     <!-- ==== Color Scheme Stylesheet ==== -->
     <link rel="stylesheet" href="css/colors/color-1.css" id="changeColorScheme">
 
-    <link rel="stylesheet" href="css/custom-lib/unite-gallery.css">
-    <link rel="stylesheet" href="css/custom-lib/ug-theme-default.css">
-
     <!-- ==== Custom Stylesheet ==== -->
     <link rel="stylesheet" href="css/custom.css">
 
+    <!-- ==== libs =========== -->
+    <link rel="stylesheet" href="css/custom-lib/rvslider.min.css">
     <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -111,9 +110,9 @@
                     <!-- Header Topbar Links Start -->
                     <ul class="header--topbar-links nav ff--primary float--right">
                         <li>
-                            <a href="#" class="btn-link">
+                            <a href="member-profile.html" class="btn-link">
                                 <i class="fa mr--8 fa-user-o"></i>
-                                <span>My Account</span>
+                                <span>My Profile</span>
                             </a>
                             <button type="button" class="btn-link" id="start-tour">
                                 <span>Start tour</span>
@@ -218,20 +217,93 @@
         </header>
         <!-- Header Section End -->
         <div class="videos-gallery-sec">
-            <!-- Banner Section Start -->
-            <div id="gallery" style="display:none;">
-                <img alt="Youtube Video" data-type="youtube" data-videoid="kWmX3pd1f10" data-description="You can include youtube videos easily!">
-                <img alt="Youtube Video" data-type="youtube" data-videoid="JvbHu_bVa_g" data-description="You can include youtube videos easily!">
+            <div class="rvs-container">
+                <div class="rvs-item-container">
+                    <div class="rvs-item-stage">
+                        <div class="rvs-item" style="background-image: url(https://s3.amazonaws.com/fooplugins/rvs/default.jpg)">
+                            <p class="rvs-item-text">Fish Frenzy - Oceans Clip (.mp4, .webm, .ogv)
+                                <small>by DisneyNature</small>
+                            </p>
+                            <a href="https://s3.amazonaws.com/fooplugins/rvs/oceans-clip.mp4, https://s3.amazonaws.com/fooplugins/rvs/oceans-clip.webm, https://s3.amazonaws.com/fooplugins/rvs/oceans-clip.ogv" class="rvs-play-video"></a>
+                        </div>
+                        <div class="rvs-item" style="background-image: url(http://s2.dmcdn.net/MWyr3/x240-obT.jpg)">
+                            <p class="rvs-item-text">Deep Danny &amp; Leon Gris feat. Astghik Safaryan - Today (Official Music Video)
+                                <small>by YT Media Network</small>
+                            </p>
+                            <a href="http://www.dailymotion.com/video/x2yjjhu_deep-danny-leon-gris-feat-astghik-safaryan-today-official-music-video_music" class="rvs-play-video"></a>
+                        </div>
+                        <div class="rvs-item" style="background-image: url(http://s1.dmcdn.net/JPSYa/x240-_GY.jpg)">
+                            <p class="rvs-item-text">Drama B - DREAMS (Official Music Video) - Jee Juh Contest 1st Place WINNER
+                                <small>by YT Media Network</small>
+                            </p>
+                            <a href="http://www.dailymotion.com/embed/video/x2ioxee" class="rvs-play-video"></a>
+                        </div>
+                        <div class="rvs-item" style="background-image: url(https://s3.amazonaws.com/fooplugins/rvs/default.jpg)">
+                            <p class="rvs-item-text">Fish Frenzy - Oceans Clip (.mp4, .webm, .ogv)
+                                <small>by DisneyNature</small>
+                            </p>
+                            <a href="https://s3.amazonaws.com/fooplugins/rvs/oceans-clip.mp4, https://s3.amazonaws.com/fooplugins/rvs/oceans-clip.webm, https://s3.amazonaws.com/fooplugins/rvs/oceans-clip.ogv" class="rvs-play-video"></a>
+                        </div>
+                        <div class="rvs-item" style="background-image: url(http://s2.dmcdn.net/MWyr3/x240-obT.jpg)">
+                            <p class="rvs-item-text">Deep Danny &amp; Leon Gris feat. Astghik Safaryan - Today (Official Music Video)
+                                <small>by YT Media Network</small>
+                            </p>
+                            <a href="http://www.dailymotion.com/video/x2yjjhu_deep-danny-leon-gris-feat-astghik-safaryan-today-official-music-video_music" class="rvs-play-video"></a>
+                        </div>
+                        <div class="rvs-item" style="background-image: url(http://s1.dmcdn.net/JPSYa/x240-_GY.jpg)">
+                            <p class="rvs-item-text">Drama B - DREAMS (Official Music Video) - Jee Juh Contest 1st Place WINNER
+                                <small>by YT Media Network</small>
+                            </p>
+                            <a href="http://www.dailymotion.com/embed/video/x2ioxee" class="rvs-play-video"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rvs-nav-container">
+                    <a class="rvs-nav-prev"></a>
+                    <div class="rvs-nav-stage">
+                        <a class="rvs-nav-item">
+                            <span class="rvs-nav-item-thumb" style="background-image: url(https://s3.amazonaws.com/fooplugins/rvs/thumb.jpg)"></span>
+                            <h4 class="rvs-nav-item-title">Fish Frenzy - Oceans Clip (.mp4, .webm, .ogv)</h4>
+                            <small class="rvs-nav-item-credits">by DisneyNature</small>
+                        </a>
+                        <a class="rvs-nav-item">
+                            <span class="rvs-nav-item-thumb" style="background-image: url(http://s2.dmcdn.net/MWyr3/x240-obT.jpg)"></span>
+                            <h4 class="rvs-nav-item-title">Deep Danny &amp; Leon Gris feat. Astghik Safaryan - Today (Official Music Video)</h4>
+                            <small class="rvs-nav-item-credits">by YT Media Network</small>
+                        </a>
+                        <a class="rvs-nav-item">
+                            <span class="rvs-nav-item-thumb" style="background-image: url(http://s1.dmcdn.net/JPSYa/x240-_GY.jpg)"></span>
+                            <h4 class="rvs-nav-item-title">Drama B - DREAMS (Official Music Video) - Jee Juh Contest 1st Place WINNER</h4>
+                            <small class="rvs-nav-item-credits">by YT Media Network</small>
+                        </a>
+                        <a class="rvs-nav-item">
+                            <span class="rvs-nav-item-thumb" style="background-image: url(https://s3.amazonaws.com/fooplugins/rvs/thumb.jpg)"></span>
+                            <h4 class="rvs-nav-item-title">Fish Frenzy - Oceans Clip (.mp4, .webm, .ogv)</h4>
+                            <small class="rvs-nav-item-credits">by DisneyNature</small>
+                        </a>
+                        <a class="rvs-nav-item">
+                            <span class="rvs-nav-item-thumb" style="background-image: url(http://s2.dmcdn.net/MWyr3/x240-obT.jpg)"></span>
+                            <h4 class="rvs-nav-item-title">Deep Danny &amp; Leon Gris feat. Astghik Safaryan - Today (Official Music Video)</h4>
+                            <small class="rvs-nav-item-credits">by YT Media Network</small>
+                        </a>
+                        <a class="rvs-nav-item">
+                            <span class="rvs-nav-item-thumb" style="background-image: url(http://s1.dmcdn.net/JPSYa/x240-_GY.jpg)"></span>
+                            <h4 class="rvs-nav-item-title">Drama B - DREAMS (Official Music Video) - Jee Juh Contest 1st Place WINNER</h4>
+                            <small class="rvs-nav-item-credits">by YT Media Network</small>
+                        </a>
+                    </div>
+                    <a class="rvs-nav-next"></a>
+                </div>
             </div>
-            <!-- Banner Section End -->
         </div>
-
-        <hr>
 
         <!-- products Section Start -->
         <div class="main--content col-md-12 pb--40">
             <div class="main--content-inner">
                 <div class="row dropdown-row" id="step2">
+
+                    <h3 class="section--title">Filters</h3>
+
                     <div class="dropdown products-dropdown">
                         <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="icon">
@@ -388,8 +460,9 @@
                             <div class="product--info text-left ">
                                 <div class="title ">
                                     <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV Interview
-                                            </a>
+                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV
+                                            Interview
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -425,7 +498,7 @@
                                 <div class="title ">
                                     <h3 class="h6 ">
                                         <a href="product-details.html " class="btn-link ">Google's AI Assistant Can Now Make Real Phone Calls
-                                            </a>
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -461,7 +534,7 @@
                                 <div class="title ">
                                     <h3 class="h6 ">
                                         <a href="product-details.html " class="btn-link ">A.I. is Progressing Faster Than You Think!
-                                            </a>
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -539,8 +612,9 @@
                             <div class="product--info text-left ">
                                 <div class="title ">
                                     <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV Interview
-                                                </a>
+                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV
+                                            Interview
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -576,7 +650,7 @@
                                 <div class="title ">
                                     <h3 class="h6 ">
                                         <a href="product-details.html " class="btn-link ">Google's AI Assistant Can Now Make Real Phone Calls
-                                                </a>
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -612,7 +686,7 @@
                                 <div class="title ">
                                     <h3 class="h6 ">
                                         <a href="product-details.html " class="btn-link ">A.I. is Progressing Faster Than You Think!
-                                                </a>
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -690,8 +764,9 @@
                             <div class="product--info text-left ">
                                 <div class="title ">
                                     <h3 class="h6 ">
-                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV Interview
-                                                </a>
+                                        <a href="product-details.html " class="btn-link ">Most Advanced A.I. Robot Admits It Wants to Destroy Humans After Glitch During TV
+                                            Interview
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -727,7 +802,7 @@
                                 <div class="title ">
                                     <h3 class="h6 ">
                                         <a href="product-details.html " class="btn-link ">Google's AI Assistant Can Now Make Real Phone Calls
-                                                </a>
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -763,7 +838,7 @@
                                 <div class="title ">
                                     <h3 class="h6 ">
                                         <a href="product-details.html " class="btn-link ">A.I. is Progressing Faster Than You Think!
-                                                </a>
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="cat text-left">
@@ -800,6 +875,312 @@
             </div>
         </div>
         <!-- products Section End -->
+
+        <div class="container-fluid">
+            <!-- timeline-sec -->
+            <div class="row">
+                <!-- Main Content Start -->
+                <div class=" col-md-8 pb--60">
+                    <div class="main--content">
+                        <div class="main--content-inner drop--shadow">
+                            <!-- Content Nav Start -->
+                            <h3 class="section--title">My Timeline</h3>
+                            <!-- Content Nav End -->
+
+                            <!-- Activity List Start -->
+                            <div class="activity--list">
+                                <!-- Activity Items Start -->
+                                <ul class="activity--items nav">
+                                    <li>
+                                        <!-- Activity Item Start -->
+                                        <div class="activity--item">
+                                            <div class="activity--avatar">
+                                                <a href="member-activity-personal.html">
+                                                    <img src="img/activity-img/avatar-01.jpg" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="activity--info fs--14">
+                                                <div class="activity--header">
+                                                    <p>
+                                                        <a href="member-activity-personal.html">Eileen K. Ruiz</a> posted an update in the group
+                                                        <a href="group-home.html">Crazy Music Lovers</a>
+                                                    </p>
+                                                </div>
+
+                                                <div class="activity--meta fs--12">
+                                                    <p>
+                                                        <i class="fa mr--8 fa-clock-o"></i>Yeasterday at 08:20 am</p>
+                                                </div>
+
+                                                <div class="activity--content">
+                                                    <div class="link--embed">
+                                                        <a class="link--url" href="https://www.youtube.com/watch?v=YE7VzlLtp-4" data-trigger="video_popup"></a>
+
+                                                        <div class="link--video">
+                                                            <img src="img/activity-img/link-video-poster.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="link--info fs--12">
+                                                            <div class="link--title">
+                                                                <h4 class="h6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</h4>
+                                                            </div>
+
+                                                            <div class="link--desc">
+                                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                                                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="link--rel ff--primary text-uppercase">
+                                                                <p>www.unknownneonnettle.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Activity Item End -->
+                                    </li>
+                                    <li>
+                                        <!-- Activity Item Start -->
+                                        <div class="activity--item">
+                                            <div class="activity--avatar">
+                                                <a href="member-activity-personal.html">
+                                                    <img src="img/activity-img/avatar-01.jpg" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="activity--info fs--14">
+                                                <div class="activity--header">
+                                                    <p>
+                                                        <a href="member-activity-personal.html">Eileen K. Ruiz</a> posted an update</p>
+                                                </div>
+
+                                                <div class="activity--meta fs--12">
+                                                    <p>
+                                                        <i class="fa mr--8 fa-clock-o"></i>Yeasterday at 08:20 am</p>
+                                                </div>
+
+                                                <div class="activity--content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quo deserunt a suscipit perferendis dicta at eveniet officiis!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Activity Item End -->
+                                    </li>
+                                    <li>
+                                        <!-- Activity Item Start -->
+                                        <div class="activity--item">
+                                            <div class="activity--avatar">
+                                                <a href="member-activity-personal.html">
+                                                    <img src="img/activity-img/avatar-01.jpg" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="activity--info fs--14">
+                                                <div class="activity--header">
+                                                    <p>
+                                                        <a href="member-activity-personal.html">Eileen K. Ruiz</a> posted an update in the group
+                                                        <a href="group-home.html">Crazy Music Lovers</a>
+                                                    </p>
+                                                </div>
+
+                                                <div class="activity--meta fs--12">
+                                                    <p>
+                                                        <i class="fa mr--8 fa-clock-o"></i>Yeasterday at 08:20 am</p>
+                                                </div>
+
+                                                <div class="activity--content">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing</p>
+                                                </div>
+
+                                                <div class="activity--action fw--700">
+                                                    <a href="#">See More...</a>
+                                                </div>
+
+                                                <div class="activity--comments fs--12">
+                                                    <ul class="acomment--items nav">
+                                                        <li>
+                                                            <div class="acomment--item clearfix">
+                                                                <div class="acomment--avatar">
+                                                                    <a href="member-activity-personal.html">
+                                                                        <img src="img/activity-img/avatar-04.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="acomment--info">
+                                                                    <div class="acomment--header">
+                                                                        <p>
+                                                                            <a href="#">Leticia J. Espinosa</a> Replied</p>
+                                                                    </div>
+
+                                                                    <div class="acomment--meta">
+                                                                        <p>
+                                                                            <i class="fa mr--8 fa-clock-o"></i>Yeasterday at 08:20 am</p>
+                                                                    </div>
+
+                                                                    <div class="acomment--content">
+                                                                        <p>Well Said!</p>
+                                                                        <p>Love it.....
+                                                                            <span style="color: #ec407a;">&hearts; &hearts; &hearts;</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Activity Item End -->
+                                    </li>
+                                    <li>
+                                        <!-- Activity Item Start -->
+                                        <div class="activity--item">
+                                            <div class="activity--avatar">
+                                                <a href="member-activity-personal.html">
+                                                    <img src="img/activity-img/avatar-01.jpg" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="activity--info fs--14">
+                                                <div class="activity--header">
+                                                    <p>
+                                                        <a href="member-activity-personal.html">Eileen K. Ruiz</a> and
+                                                        <a href="member-activity-personal.html">Leticia J. Espinosa</a> are now friends</p>
+                                                </div>
+
+                                                <div class="activity--meta fs--12">
+                                                    <p>
+                                                        <i class="fa mr--8 fa-clock-o"></i>Yeasterday at 08:20 am</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Activity Item End -->
+                                    </li>
+                                    <li>
+                                        <!-- Activity Item Start -->
+                                        <div class="activity--item">
+                                            <div class="activity--avatar">
+                                                <a href="member-activity-personal.html">
+                                                    <img src="img/activity-img/avatar-01.jpg" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="activity--info fs--14">
+                                                <div class="activity--header">
+                                                    <p>
+                                                        <a href="member-activity-personal.html">Eileen K. Ruiz</a> posted an update in the group
+                                                        <a href="group-home.html">Crazy Music Lovers</a>
+                                                    </p>
+                                                </div>
+
+                                                <div class="activity--meta fs--12">
+                                                    <p>
+                                                        <i class="fa mr--8 fa-clock-o"></i>Yeasterday at 08:20 am</p>
+                                                </div>
+
+                                                <div class="activity--content">
+                                                    <div class="gallery--embed" data-trigger="gallery_popup">
+                                                        <ul class="nav AdjustRow">
+                                                            <li>
+                                                                <a href="img/activity-img/gallery-embed-01.jpg">
+                                                                    <img src="img/activity-img/gallery-embed-01.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="img/activity-img/gallery-embed-02.jpg">
+                                                                    <img src="img/activity-img/gallery-embed-02.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="img/activity-img/gallery-embed-03.jpg">
+                                                                    <img src="img/activity-img/gallery-embed-03.jpg" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="img/activity-img/gallery-embed-04.jpg" data-overlay="0.5">
+                                                                    <img src="img/activity-img/gallery-embed-04.jpg" alt="">
+                                                                    <span>24+ More</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Activity Item End -->
+                                    </li>
+                                    <li>
+                                        <!-- Activity Item Start -->
+                                        <div class="activity--item">
+                                            <div class="activity--avatar">
+                                                <a href="member-activity-personal.html">
+                                                    <img src="img/activity-img/avatar-01.jpg" alt="">
+                                                </a>
+                                            </div>
+
+                                            <div class="activity--info fs--14">
+                                                <div class="activity--header">
+                                                    <p>
+                                                        <a href="member-activity-personal.html">Eileen K. Ruiz</a> joined the group
+                                                        <a href="group-home.html">Crazy Music Lovers</a>
+                                                    </p>
+                                                </div>
+
+                                                <div class="activity--meta fs--12">
+                                                    <p>
+                                                        <i class="fa mr--8 fa-clock-o"></i>Yeasterday at 08:20 am</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Activity Item End -->
+                                    </li>
+                                </ul>
+                                <!-- Activity Items End -->
+                            </div>
+                            <!-- Activity List End -->
+
+                        </div>
+                    </div>
+                    <!-- Main Content End -->
+                </div>
+                <!-- Main Sidebar Start -->
+                <div class="col-md-4 pb--60">
+                    <div class="main--sidebar">
+                        <!-- Widget Start -->
+                        <div class="widget">
+                            <h2 class="h4 fw--700 widget--title">Notice</h2>
+
+                            <!-- Text Widget Start -->
+                            <div class="text--widget">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some look even slightly believable.</p>
+                            </div>
+                            <!-- Text Widget End -->
+                        </div>
+                        <!-- Widget End -->
+
+                        <!-- Widget Start -->
+                        <div class="widget">
+                            <h2 class="h4 fw--700 widget--title">Advertisements</h2>
+
+                            <!-- Ad Widget Start -->
+                            <div class="ad--widget">
+                                <a href="#">
+                                    <img src="img/widgets-img/ad.jpg" alt="" class="center-block">
+                                </a>
+                            </div>
+                            <!-- Ad Widget End -->
+                        </div>
+                        <!-- Widget End -->
+                    </div>
+                    <!-- Main Sidebar End -->
+                </div>
+            </div>
+            <!-- timeline-sec -->
+        </div>
 
         <!-- Footer Section Start -->
         <footer>
@@ -994,8 +1375,7 @@
     <!-- ==== Plugins Bundle ==== -->
     <script src="js/plugins.min.js"></script>
     <script src="js/intro.js"></script>
-    <script src="js/custom-lib/ug-theme-default.js"></script>
-    <script src="js/custom-lib/unitegallery.min.js"></script>
+    <script src="js/custom-lib/rvslider.min.js"></script>
 
     <!-- ==== Main Script ==== -->
     <script src="js/main.js"></script>
